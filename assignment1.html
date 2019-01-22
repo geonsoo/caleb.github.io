@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Assignment1</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="css/assignment1.css" rel="stylesheet"/>
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>Assignment 1 - Blink!</h1>
+            <h2>Geon Soo Park</h2>
+            
+            <!-- Section for Schematic -->
+            <section class="divider">
+            <h3>Schematic</h3>
+            <p>For each resisters, I chose the value of 1k ohm. Because the Volt from each Pin is 5V and the red LED is 1.8 V drop. <br> Therefore, 
+            By using Ohm's Law V = I * R: R = 3.2/0.02 which is 160 ohm. That is why I chose 1k resistor (if the ohms is higher than resistor then it will over burden the LED. If the resistor is too high then the flow of electricity is too low).
+            </p>
+            <img src=images/assignment1/scheme.png width=400>
+            </section>
+            
+            <!-- Section for Circuit -->
+            <section class="divider">
+            <h3>Circuit</h3>
+            <p>The switch button is connected to the 5V pin and connects to the ground pin through a resistor. It is also connected to pin 4 which <br>
+            functions as a trigger (input and output) for the switch. <br> The blue LED is connected to pin 10 (because it requires analog format) through a resistor and connected to the ground pin. Lastly, the red LED is connected to Pin 7 through a resistor and then it connected to the ground pin </p>
+            <img src=images/assignment1/circuit.png width=400>
+            </section>
+            
+            <!-- Section for Firmware -->
+            <section class="divider">
+            <h3>Firmware</h3>
+            <p>Three integels are initiated (two for LEDs (#7 and #10) and one for the button (#4)). There are two outputs <br> from the Arduino board pin modes (#7 and 10) and one input for the button (#4). Once the user pushes the switch button then <br> it triggers the action for the code. The blue LED starts to fade in and waits for 10 milliseconds and to fade out for 10 milliseconds. <br>After that, the red LED starts to blinks in every 50 milliseconds. It blinks about 100 times in total.</p>
+            <img src=images/assignment1/code.png width=400>
+            </section>
+            
+            <!-- Section for Operation -->
+            <section class="divider">
+            <h3>Operation</h3>
+            <p>When the user pushes a button on the breadboard, the blue LED first start to fade in for 50 milliseconds and to fade out for 50 milliseconds.<br> After that, the red LED starts to repeatedly turn on and off (in every 10 milliseconds) for 100 times in total</p>
+            <img src=images/assignment1/blink.gif width=400>
+            </section>
+            
+            
+            <p>
+            Thank you and have a nice day!
+            </p>
+        </div>
+        
+    </body>
+</html>
